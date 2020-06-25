@@ -5,6 +5,13 @@ body {
   color: #1a1919ad;
 }
 
+/*----------------------------------------------------Button Sign-In/Sign-Up*/
+.btn-success{
+    letter-spacing: 2px;
+    float: right;
+    margin-right: 10px;
+}
+
 /*----------------------------------------------------logo-slogan*/
 .logo-slogan {
   font-family: "Montserrat", sans-serif;
@@ -43,11 +50,19 @@ body {
   padding-left: 50px;
 }
 
-li.nav-item:hover {
-  color: rgb(40, 182, 44);
-}
-
 .form-control:focus {
   border-color: #28a745;
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/*----------------------------------------------------Footer*/
+.social-links{
+   font-size: 40px; 
+       margin-right: 20px;
+    margin-top: 5px;
+    color:#1a1919ad;
+}
+
+.social-links:hover{
+color:rgb(40, 182, 44);
 }
