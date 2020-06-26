@@ -96,8 +96,8 @@ body {
   max-width: 70%;
 }
 
-.btn-submit{
-    margin-top: 10px;
+textarea.form-control {
+    margin-bottom: 20px;
 }
 
 /*----------------------------------------------------Media*/

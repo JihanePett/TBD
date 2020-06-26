@@ -14,6 +14,15 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Taste Buds Dream</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_0YyYWKEECJjsPNsOpPRKd");
+      })();
+    </script>
   </head>
   <body>
     <!--Button Sign In/Sign Up-->
@@ -78,7 +87,7 @@
         <div class="col">
           <h5 class="text-center h5-contact">Any questions/suggestions?</h5>
           <div class="center-form">
-            <form>
+            <form onsubmit="returnsendMail(this);">
               <div class="row">
                 <div class="col">
                   <input
@@ -124,9 +133,9 @@
                 </div>
               </div>
               <div class="d-flex justify-content-center">
-              <button type="submit" class="btn btn-success btn-submit">
-                Submit
-              </button>
+                <button type="submit" class="btn btn-success btn-submit">
+                  Submit
+                </button>
               </div>
             </form>
           </div>
@@ -182,6 +191,7 @@
       <!-- Copyright -->
       <div class="footer-copyright text-center py-3">© 2020 Copyright</div>
     </footer>
+    <script src="assets/js/sendEmail.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
