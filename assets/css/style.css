@@ -67,6 +67,38 @@ body {
   color: rgb(40, 182, 44);
 }
 
+/*----------------------------------------------------Hero image*/
+.container-fluid{
+    padding: 0;
+}
+
+.col-12{
+    padding: 0;
+}
+
+.hero-img{
+    height: 40vw;
+}
+
+/*----------------------------------------------------contact-us*/
+.h5-contact {
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.center-form {
+  padding-top: 10px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.btn-submit{
+    margin-top: 10px;
+}
 
 /*----------------------------------------------------Media*/
 @media screen and (max-width: 540px) {
