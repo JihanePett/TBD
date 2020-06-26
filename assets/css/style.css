@@ -6,10 +6,10 @@ body {
 }
 
 /*----------------------------------------------------Button Sign-In/Sign-Up*/
-.btn-success{
-    letter-spacing: 2px;
-    float: right;
-    margin-right: 10px;
+.btn-success {
+  letter-spacing: 2px;
+  float: right;
+  margin-right: 10px;
 }
 
 /*----------------------------------------------------logo-slogan*/
@@ -22,8 +22,8 @@ body {
 }
 
 /*----------------------------------------------------Navigation*/
-.bg-light{
-    border: none;
+.bg-light {
+  border: none;
 }
 
 .navbar-light .navbar-brand {
@@ -34,10 +34,7 @@ body {
   color: rgb(40, 182, 44);
 }
 
-.navbar-light .navbar-brand:hover,
-.navbar-light
-  .navbar-brand:focus
-  {
+.navbar-light .navbar-brand:hover {
   color: #1a1919ad;
 }
 
@@ -49,6 +46,9 @@ body {
   margin-left: 20px;
   padding-left: 50px;
 }
+.navbar-light .navbar-nav .nav-item:hover {
+  border-bottom: 1px solid rgb(40, 182, 44);
+}
 
 .form-control:focus {
   border-color: #28a745;
@@ -56,13 +56,20 @@ body {
 }
 
 /*----------------------------------------------------Footer*/
-.social-links{
-   font-size: 40px; 
-       margin-right: 20px;
-    margin-top: 5px;
-    color:#1a1919ad;
+.social-links {
+  font-size: 40px;
+  margin-right: 20px;
+  margin-top: 5px;
+  color: #1a1919ad;
 }
 
-.social-links:hover{
-color:rgb(40, 182, 44);
+.social-links:hover {
+  color: rgb(40, 182, 44);
 }
+
+
+/*----------------------------------------------------Media*/
+@media screen and (max-width: 540px) {
+  .navbar-light .navbar-nav .nav-item:hover {
+    border-bottom: 0;
+  }
