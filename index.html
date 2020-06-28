@@ -12,9 +12,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Taste Buds Dream</title>
   </head>
+
   <body>
     <!--Button Sign In/Sign Up-->
     <button type="button" class="btn btn-success d-none d-sm-block">
@@ -24,7 +26,7 @@
       <div class="row-no-gutters d-none d-sm-block">
         <div class="col-12 logo-slogan">
           <!--Logo and Slogan-->
-          <h1>Taste Buds Dream</h1>
+          <h1 class="logo">Taste Buds Dream</h1>
           <h3>Recipes to awaken your senses</h3>
         </div>
       </div>
@@ -76,10 +78,16 @@
     <div class="container-fluid">
       <div class="row-no-gutters">
         <div class="col-12">
-          <img src="assets/images/hero-img.jpg" class="hero-img w-100" alt="green quiche" />
+          <img
+            src="assets/images/hero-img.jpg"
+            class="hero-img w-100"
+            alt="green quiche"
+          />
         </div>
       </div>
     </div>
+    <!-- BigOven Api -->
+    <div id="recipes"></div>
     <!-- Footer -->
     <footer class="footer fixed">
       <!-- Call to action -->
@@ -128,8 +136,9 @@
       <!-- Copyright -->
       <div class="footer-copyright text-center py-3">© 2020 Copyright</div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://developer.edamam.com/edamam-recipe-api"></script>
   </body>
 </html>
