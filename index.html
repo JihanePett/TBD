@@ -12,8 +12,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
-    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <!--Edamam API-->
+    <script
+      type="text/javascript"
+      src="https://api.edamam.com/search?q=chicken&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}"
+    ></script>
+
+    <script type="text/javascript" src="assets/js/recipes.js"></script>
+
     <title>Taste Buds Dream</title>
   </head>
 
@@ -26,7 +34,7 @@
       <div class="row-no-gutters d-none d-sm-block">
         <div class="col-12 logo-slogan">
           <!--Logo and Slogan-->
-          <h1 class="logo">Taste Buds Dream</h1>
+          <h1>Taste Buds Dream</h1>
           <h3>Recipes to awaken your senses</h3>
         </div>
       </div>
@@ -64,7 +72,8 @@
         <form class="form-inline my-2 my-lg-0">
           <input
             class="form-control mr-sm-2"
-            type="search"
+            type="text"
+            value=""
             placeholder="Search by Ingredient"
             aria-label="Search by Ingredient"
           />
@@ -75,7 +84,8 @@
       </div>
     </nav>
     <!-- Hero Image -->
-    <div class="container-fluid">
+
+    <section class="container-fluid">
       <div class="row-no-gutters">
         <div class="col-12">
           <img
@@ -84,10 +94,20 @@
             alt="green quiche"
           />
         </div>
-      </div>
-    </div>
-    <!-- BigOven Api -->
-    <div id="recipes"></div>
+        <!-- Edamam placeholder
+        <div class="center-form">
+          <input
+            type="text"
+            id="ed-label"
+            value="recipes"
+            oninput="fetchEdInformation()"
+          />
+          <div id="ed-label-data"></div>
+          <div id="ed-image-data"></div>
+        </div>-->
+      </div> 
+    </section>
+
     <!-- Footer -->
     <footer class="footer fixed">
       <!-- Call to action -->
@@ -136,9 +156,16 @@
       <!-- Copyright -->
       <div class="footer-copyright text-center py-3">© 2020 Copyright</div>
     </footer>
-    <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+
+    <!-- Javascript -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="https://developer.edamam.com/edamam-recipe-api"></script>
   </body>
 </html>
